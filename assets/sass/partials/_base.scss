@@ -1,0 +1,67 @@
+// Base general de las dos páginas
+
+html {
+    font-family: $font-principal;
+    scrollbar-gutter: stable;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    * {
+        cursor: none !important;
+    }
+}
+
+body {
+    cursor: none;
+    margin: 0;
+    background-color: $color-blanco;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+// Cursor personalizado
+#custom-cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    background-color: $color-rojo;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 99999;
+    transform: translate(-50%, -50%);
+    mix-blend-mode: difference;
+    outline: 1px solid transparent;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    will-change: transform;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+// Ajustes para pantallas táctiles
+@media (max-width: $bp-tablet) {
+    html {
+        * {
+            cursor: auto !important;
+        }
+    }
+
+    #custom-cursor {
+        display: none;
+    }
+
+    body {
+        cursor: auto;
+    }
+}

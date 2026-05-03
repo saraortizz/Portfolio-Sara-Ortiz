@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Sara Ortiz • Portfolio</title>
+    <link rel="icon" type="image/svg+xml" href="assets/img/otros_recursos/logo_demonspirale.svg">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrambleTextPlugin.min.js" defer></script>
+    <script src="assets/app/main.js" defer></script>
+</head>
+
+<body>
+    <div id="custom-cursor"></div>
+
+    <div id="loader">
+        <div id="logo-wrapper"></div>
+    </div>
+
+    <main id="content">
+        <section id="hero-seccion">
+            <canvas id="logo-particulas"></canvas>
+            <div class="contenedor-texto">
+                <h1>Bienvenido!</h1>
+                <h2><span id="text-reveal">SOY SARA ORTIZ</span></h2>
+                <p>BRANDING • EDITORIAL • MOTION • ILUSTRACIÓN</p>
+            </div>
+        </section>
+
+        <section id="sobre-mi">
+            <div class="contenedor-sobre-mi">
+                <div class="col-texto">
+                    <div class="header-seccion">
+                        <div class="linea"></div>
+                        <span class="subtitulo">SOBRE MÍ</span>
+                    </div>
+                    <h1>Transformo mi energía y curiosidad en sistemas visuales que funcionan.</h1>
+                    <p>Me considero una diseñadora <strong>todoterreno y autodidacta</strong>. Me mueve la curiosidad,
+                        pero me define el orden.</p>
+                    <div class="contenedor-pills">
+                        <button class="pill">BRANDING & IDENTIDAD</button>
+                        <button class="pill">ILUSTRACIÓN</button>
+                        <button class="pill">EDITORIAL</button>
+                        <button class="pill">MOTION GRAPHICS</button>
+                        <button class="pill">PRODUCCIÓN</button>
+                        <button class="pill">DISEÑO WEB/UX</button>
+                    </div>
+                </div>
+                <div class="col-carnet">
+                    <div id="carnet-wrapper">
+                        <div class="carnet-front">
+                            <div class="carnet-top">
+                                <span class="id-2026">SARA ID</span>
+                                <span class="visual-profile">CREATIVE PROFILE</span>
+                            </div>
+                            <div class="foto-perfil-container">
+                                <canvas id="canvas-foto-fixed"></canvas>
+                                <canvas id="canvas-foto-puntos"></canvas>
+                            </div>
+                            <div class="info-personal">
+                                <div class="dato"><span>NOMBRE</span>Sara Ortiz Cardo</div>
+                                <div class="dato"><span>AKA</span>demonspirale</div>
+                                <div class="dato"><span>OCUPACIÓN</span>Diseño Gráfico</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills-section">
+            <div class="horizontal-container">
+                <div class="header-fixed">
+                    <div class="header-seccion">
+                        <div class="linea"></div>
+                        <span class="subtitulo">SKILLS</span>
+                    </div>
+                    <h1>Herramientas digitales.</h1>
+                    <p>Herramientas y nivel con el que me muevo en cada entorno.</p>
+                </div>
+                <div class="horizontal-wrapper">
+                    <div class="skill-card">
+                        <span class="card-number">01</span>
+                        <h2>Photoshop</h2>
+                        <p>Retoque digital y fotocomposición.</p>
+                        <div class="skill-bar-container">
+                            <div class="skill-bar" style="width: 95%;"></div>
+                        </div>
+                        <span class="card-percentage">95%</span>
+                    </div>
+                    <div class="skill-card">
+                        <span class="card-number">02</span>
+                        <h2>Indesign</h2>
+                        <p>Maquetación y artes finales.</p>
+                        <div class="skill-bar-container">
+                            <div class="skill-bar" style="width: 90%;"></div>
+                        </div>
+                        <span class="card-percentage">90%</span>
+                    </div>
+                    <div class="skill-card">
+                        <span class="card-number">03</span>
+                        <h2>Illustrator</h2>
+                        <p>Diseño vectorial, identidad y patterns.</p>
+                        <div class="skill-bar-container">
+                            <div class="skill-bar" style="width: 90%;"></div>
+                        </div>
+                        <span class="card-percentage">90%</span>
+                    </div>
+                    <div class="skill-card">
+                        <span class="card-number">04</span>
+                        <h2>After Effects</h2>
+                        <p>Motion graphics y animación.</p>
+                        <div class="skill-bar-container">
+                            <div class="skill-bar" style="width: 80%;"></div>
+                        </div>
+                        <span class="card-percentage">80%</span>
+                    </div>
+                    <div class="skill-card">
+                        <span class="card-number">05</span>
+                        <h2>Figma</h2>
+                        <p>UI/UX y prototipado.</p>
+                        <div class="skill-bar-container">
+                            <div class="skill-bar" style="width: 85%;"></div>
+                        </div>
+                        <span class="card-percentage">85%</span>
+                    </div>
+                    <div class="skill-card">
+                        <span class="card-number">06</span>
+                        <h2>Resolume Arena</h2>
+                        <p>Cración de visuales reacctivos a la música.</p>
+                        <div class="skill-bar-container">
+                            <div class="skill-bar" style="width: 80%;"></div>
+                        </div>
+                        <span class="card-percentage">80%</span>
+                    </div>
+                    <div class="skill-card">
+                        <span class="card-number">07</span>
+                        <h2>Premiere Pro</h2>
+                        <p>Edición de video y postproducción.</p>
+                        <div class="skill-bar-container">
+                            <div class="skill-bar" style="width: 70%;"></div>
+                        </div>
+                        <span class="card-percentage">70%</span>
+                    </div>
+                    <div class="skill-card">
+                        <span class="card-number">08</span>
+                        <h2>Visual Studio Code</h2>
+                        <p>Desarrollo web y programación básica.</p>
+                        <div class="skill-bar-container">
+                            <div class="skill-bar" style="width: 70%;"></div>
+                        </div>
+                        <span class="card-percentage">70%</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="proyectos-section">
+            <div class="container">
+                <div class="header-fixed">
+                    <div class="header-seccion">
+                        <div class="linea"></div>
+                        <span class="subtitulo">PORTFOLIO</span>
+                    </div>
+                    <h1>Proyectos destacados.</h1>
+                </div>
+
+                <div class="projects-grid" id="grid-proyectos">
+                </div>
+            </div>
+        </section>
+        <footer id="main-footer">
+            <div class="container">
+
+                <div class="header-seccion">
+                    <div class="linea"></div>
+                    <span class="subtitulo">CONTACTO</span>
+                </div>
+
+                <div class="footer-content">
+                    <h1 class="footer-logo">Sara O<span class="logo-r">r</span>tiz Cardo</h1>
+                    <div class="footer-actions">
+                        <a href="assets/img/otros_recursos/CV_Europass_SaraOrtiz_2026.pdf" class="pill pill-primary"
+                            download>
+                            <svg class="icon-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18.0701 14.43L12.0001 20.5L5.93005 14.43" stroke="currentColor"
+                                    stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M12 3.5V20.33" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            DESCARGAR MI CV
+                        </a>
+
+                        <a href="https://www.instagram.com/demonspirale" target="_blank" class="pill">
+                            <svg class="icon-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 22H15C20 22 22 20 22 15V9C22 4 20 2 15 2H9C4 2 2 4 2 9V15C2 20 4 22 9 22Z"
+                                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M12 15.5C13.933 15.5 15.5 13.933 15.5 12C15.5 10.067 13.933 8.5 12 8.5C10.067 8.5 8.5 10.067 8.5 12C8.5 13.933 10.067 15.5 12 15.5Z"
+                                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M17.6361 7H17.6477" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            DEMONSPIRALE
+                        </a>
+                        <a href="https://www.linkedin.com/in/sara-ortiz-cardo/" target="_blank" class="pill">
+                            <svg class="icon-svg" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M22 3.47059V20.5294C22 20.9194 21.845 21.2935 21.5692 21.5693C21.2935 21.8451 20.9194 22 20.5294 22H3.47056C3.08053 22 2.70648 21.8451 2.43069 21.5693C2.15491 21.2935 1.99997 20.9194 1.99997 20.5294V3.47059C1.99997 3.08056 2.15491 2.70651 2.43069 2.43073C2.70648 2.15494 3.08053 2 3.47056 2H20.5294C20.9194 2 21.2935 2.15494 21.5692 2.43073C21.845 2.70651 22 3.08056 22 3.47059V3.47059ZM7.88232 9.64706H4.94115V19.0588H7.88232V9.64706ZM8.14703 6.41176C8.14858 6.18929 8.10629 5.96869 8.02258 5.76255C7.93888 5.55642 7.81539 5.36879 7.65916 5.21039C7.50294 5.05198 7.31705 4.92589 7.1121 4.83933C6.90715 4.75277 6.68715 4.70742 6.46468 4.70588H6.41173C5.95931 4.70588 5.52541 4.88561 5.20549 5.20552C4.88558 5.52544 4.70585 5.95934 4.70585 6.41176C4.70585 6.86419 4.88558 7.29809 5.20549 7.61801C5.52541 7.93792 5.95931 8.11765 6.41173 8.11765V8.11765C6.63423 8.12312 6.85562 8.0847 7.06325 8.00458C7.27089 7.92447 7.46071 7.80422 7.62186 7.65072C7.78301 7.49722 7.91234 7.31346 8.00245 7.10996C8.09256 6.90646 8.14169 6.6872 8.14703 6.46471V6.41176ZM19.0588 13.3412C19.0588 10.5118 17.2588 9.41177 15.4706 9.41177C14.8851 9.38245 14.3021 9.50715 13.7798 9.77345C13.2576 10.0397 12.8142 10.4383 12.4941 10.9294H12.4117V9.64706H9.64703V19.0588H12.5882V14.0529C12.5457 13.5403 12.7072 13.0315 13.0376 12.6372C13.368 12.2429 13.8407 11.9949 14.3529 11.9471H14.4647C15.4 11.9471 16.0941 12.5353 16.0941 14.0176V19.0588H19.0353L19.0588 13.3412Z"
+                                    stroke="currentColor" fill="none" stroke-width="1.2" />
+                            </svg>
+                            LINKEDIN
+                        </a>
+                        <a href="mailto:saraortizzcardo25@gmail.com" class="pill">
+                            <svg class="icon-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M17 20.5H7C4 20.5 2 19 2 15.5V8.5C2 5 4 3.5 7 3.5H17C20 3.5 22 5 22 8.5V15.5C22 19 20 20.5 17 20.5Z"
+                                    stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M17 9L13.87 11.5C12.84 12.32 11.15 12.32 10.12 11.5L7 9" stroke="currentColor"
+                                    stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            SARAORTIZZCARDO25@GMAIL.COM
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <p>© 2026 • DISEÑADO Y DESARROLLADO POR DEMONSPIRALE</p>
+                </div>
+            </div>
+        </footer>
+    </main>
+</body>
+
+</html>

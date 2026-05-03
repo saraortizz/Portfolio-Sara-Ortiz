@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Sara Ortiz • Porfolio</title>
+    <link rel="icon" type="image/svg+xml" href="assets/img/otros_recursos/logo_demonspirale.svg">
+    <link rel="stylesheet" href="assets/css/detalles-proyecto.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" defer></script>
+    <script src="assets/app/detalles-proyecto.js" defer></script>
+</head>
+
+<body>
+    <div id="custom-cursor"></div>
+
+    <nav class="proyecto-nav">
+        <a href="index.html" class="back-btn">
+            <span class="arrow">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.57 5.92999L3.5 12L9.57 18.07" stroke="currentColor" stroke-width="1.5"
+                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M20.5 12H3.67004" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </span> VOLVER
+        </a>
+    </nav>
+
+    <main id="detalle-contenido" class="container">
+        <div class="loader-proyecto">Cargando proyecto...</div>
+    </main>
+
+    <div id="overlay-foto" class="foto-overlay">
+        <span class="cerrar-foto">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z"
+                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M9.16992 14.8299L14.8299 9.16992" stroke="currentColor" stroke-width="1.5"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M14.8299 14.8299L9.16992 9.16992" stroke="currentColor" stroke-width="1.5"
+                    stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </span>
+
+        <img src="" alt="Vista ampliada" id="foto-ampliada">
+
+        <video id="video-ampliado" controls playsinline></video>
+    </div>
+
+</body>
+
+</html>

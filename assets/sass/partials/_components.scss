@@ -1,0 +1,22 @@
+// Cabeceras pequeñas de sección
+.header-seccion {
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+
+    .linea {
+        width: 40px;
+        height: 2px;
+        background-color: $color-rojo;
+    }
+
+    .subtitulo {
+        font-size: 0.8rem;
+        font-weight: 700;
+        letter-spacing: 0.2em;
+        color: #888;
+        text-transform: uppercase;
+        font-family: $font-principal;
+    }
+}
