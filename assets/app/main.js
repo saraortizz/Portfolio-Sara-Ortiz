@@ -29,7 +29,7 @@ window.addEventListener('load', async () => {
 
         window.addEventListener('mousedown', () => gsap.to(cursor, { scale: 0.7, duration: 0.15 }));
         window.addEventListener('mouseup', () => {
-            const isHovering = document.querySelector('a:hover, button:hover, .pill:hover, #carnet-wrapper:hover, canvas:hover, .project-card:hover');
+            const isHovering = document.querySelector('a:hover, button:hover, #carnet-wrapper:hover, canvas:hover, .project-card:hover');
             gsap.to(cursor, { scale: isHovering ? 3 : 1, duration: 0.2 });
         });
     }
@@ -273,7 +273,7 @@ function iniciarScrollHorizontal(esResponsive = false) {
 function actualizarEventosCursor(esResponsive = false) {
     if (esResponsive) return;
     const cursor = document.getElementById('custom-cursor');
-    const interactivos = document.querySelectorAll('a, button, .pill, #carnet-wrapper, canvas, .skill-card, .project-card');
+    const interactivos = document.querySelectorAll('a, button, #carnet-wrapper, canvas, .skill-card, .project-card');
     interactivos.forEach(el => {
         el.addEventListener('mouseenter', () => gsap.to(cursor, { scale: 3, duration: 0.3 }));
         el.addEventListener('mouseleave', () => gsap.to(cursor, { scale: 1, duration: 0.3 }));

@@ -177,11 +177,7 @@
             border: 1px solid $color-rojo;
             background-color: $color-rojo;
             color: $color-blanco;
-
-            &:hover {
-                background-color: $color-blanco;
-                color: $color-rojo;
-            }
+            cursor: default;
         }
     }
 
@@ -957,8 +953,16 @@
 
             h2 {
                 font-size: clamp(1.7rem, 7.1vw, 2.55rem);
-                white-space: nowrap;
+                max-width: 100%;
+                white-space: normal;
+                overflow-wrap: break-word;
                 letter-spacing: -0.035em;
+
+                #text-reveal {
+                    max-width: 100%;
+                    white-space: normal;
+                    overflow-wrap: break-word;
+                }
             }
 
             p {
@@ -981,8 +985,15 @@
         }
 
         .contenedor-pills .pill {
-            width: auto;
+            width: 100%;
+            max-width: 100%;
+            box-sizing: border-box;
+            justify-content: center;
             padding: 11px 18px;
+            line-height: 1.2;
+            text-align: center;
+            white-space: normal;
+            overflow-wrap: anywhere;
         }
     }
 

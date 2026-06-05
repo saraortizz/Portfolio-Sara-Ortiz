@@ -28,9 +28,42 @@
         ]
     },
     {
+        "id": "rakuten-tv",
+        "tipo": "slideshow",
+        "size": "large",
+        "categoria": "BRANDING",
+        "año": "2026",
+        "titulo": "Rediseño de Rakuten TV",
+        "subtitulo": "Marca dinámica",
+        "descripcion_corta": "Rediseño de una plataforma de streaming y creación de una marca dinámica.",
+        "descripcion": "Este proyecto plantea una marca dinámica con el objetivo principal de crear una plataforma de streaming simpática y cercana. Para ello se diseña a Raku, una mascota que equilibra lo adorable y lo adulto, inspirada en la \"K\" de la marca y en la geometría de una claqueta de cine, capaz de flexionarse, interactuar con el usuario y adaptarse a formatos cambiando de color para conectar con el espectador.<br><a href=\"https://saraortizz.github.io/Raku-Personalizacion/\" target=\"_blank\" rel=\"noopener noreferrer\">¡Prueba aquí la demo para personalizar tu propio Raku!</a><br><a href=\"https://www.figma.com/proto/kq1i79BpdraS3ybYlyPaVb/Manual-de-marca---Rakuten?node-id=229-136&viewport=516%2C238%2C0.03&t=clk1N6cuDmAm7CfZ-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=56%3A2&page-id=0%3A1\" target=\"_blank\" rel=\"noopener noreferrer\">Ver manual de marca de Rakuten TV</a>",
+        "tags": [
+            "BRANDING",
+            "IDENTIDAD",
+            "MASCOTA"
+        ],
+        "recursos_mixtos": true,
+        "imagenes": [
+            "assets/img/img_proyectos/proyecto6/img1.png",
+            "assets/img/img_proyectos/proyecto6/img2.png",
+            "assets/img/img_proyectos/proyecto6/img3.png",
+            "assets/img/img_proyectos/proyecto6/img4.jpg",
+            "assets/img/img_proyectos/proyecto6/img5.jpg",
+            "assets/img/img_proyectos/proyecto6/img6.png",
+            "assets/img/img_proyectos/proyecto6/img7.png",
+            "assets/img/img_proyectos/proyecto6/img8.jpg",
+            "assets/img/img_proyectos/proyecto6/img9.png",
+            "assets/img/img_proyectos/proyecto6/faviconapp.png"
+        ],
+        "videos": [
+            "assets/img/img_proyectos/proyecto6/videorakuten1.mp4",
+            "assets/img/img_proyectos/proyecto6/videorakuten2.mp4"
+        ]
+    },
+    {
         "id": "otra-vez",
         "tipo": "video",
-        "size": "large",
+        "size": "small",
         "categoria": "MOTION",
         "año": "2026",
         "titulo": "Otra vez",
@@ -183,26 +216,7 @@
             "assets/img/img_proyectos/proyecto5/pictogramas8.png"
         ]
     },
-    {
-        "id": "discapacidad",
-        "tipo": "slideshow",
-        "size": "small",
-        "categoria": "CARTELERÍA",
-        "año": "2024",
-        "titulo": "Día de la Discapacidad",
-        "subtitulo": "6 de Diciembre",
-        "descripcion_corta": "Serie de carteles conmemorativos enfocados en la inclusión social.",
-        "descripcion": "Serie de carteles conmemorativos enfocados en la inclusión social. Diseñados para el concurso de carteles de la Fundación DFA, para el Día Internacional de las Personas con Discapacidad, prentendiendo sensibilizar y fomentar la inclusión.",
-        "tags": [
-            "GRÁFICA",
-            "CONCIENCIACIÓN",
-            "POSTER"
-        ],
-        "imagenes": [
-            "assets/img/img_proyectos/proyecto6/cartel1.jpg",
-            "assets/img/img_proyectos/proyecto6/cartel2.jpg"
-        ]
-    },
+    
     {
         "id": "otras-mentes",
         "tipo": "slideshow",
