@@ -340,6 +340,7 @@
         }
 
         .galeria-masonry {
+            column-count: 1;
             column-gap: 12px;
 
             img { margin-bottom: 12px; }
@@ -355,5 +356,38 @@
         }
 
         .cerrar-foto:hover { transform: none; }
+    }
+}
+
+// Vídeo de YouTube como miniatura con enlace (evita el error de incrustación)
+.video-detalle.video-detalle--enlace {
+    display: block;
+    position: relative;
+    padding-bottom: 0;
+    overflow: hidden;
+
+    img {
+        display: block;
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        object-fit: cover;
+    }
+
+    .video-play {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        padding: 14px 24px;
+        border-radius: 999px;
+        background: #DD021E;
+        color: #fff;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        white-space: nowrap;
+    }
+
+    &:hover .video-play {
+        background: #DD021E;
     }
 }

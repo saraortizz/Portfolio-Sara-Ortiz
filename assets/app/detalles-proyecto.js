@@ -1,3 +1,4 @@
+sessionStorage.setItem('volviendoDeProyecto', '1');
 window.addEventListener('load', async () => {
     const cursor = document.getElementById('custom-cursor');
     const container = document.getElementById('detalle-contenido');
@@ -176,8 +177,7 @@ window.addEventListener('load', async () => {
     }
 
     try {
-        const res = await fetch('assets/data/proyectos.json');
-        const proyectos = await res.json();
+        const proyectos = window.PROYECTOS || [];
         const proyecto = proyectos.find(p => p.id === proyectoId);
 
         if (!proyecto) {
@@ -202,17 +202,14 @@ function renderProyecto(p) {
 
     let videoYoutubeHtml = '';
     if (p.tipo === 'video' && p.video_url) {
-        const videoSrc = `${p.video_url}?autoplay=0&mute=0&controls=1&modestbranding=1&rel=0&playsinline=1`;
+        // Sin iframe: la incrustación de YouTube da error 153 en algunos vídeos; se muestra la miniatura con enlace
+        const idVideo = (p.video_url.match(/embed\/([\w-]+)/) || [])[1] || '';
+        const enlaceVideo = p.video_link || `https://www.youtube.com/watch?v=${idVideo}`;
         videoYoutubeHtml = `
-            <div class="video-detalle">
-                <iframe
-                    src="${videoSrc}"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen
-                    tabindex="-1"
-                ></iframe>
-            </div>
+            <a class="video-detalle video-detalle--enlace" href="${enlaceVideo}" target="_blank" rel="noopener">
+                <img src="https://i.ytimg.com/vi/${idVideo}/hqdefault.jpg" alt="Miniatura del vídeo" loading="lazy">
+                <span class="video-play">Ver en YouTube</span>
+            </a>
         `;
     }
 

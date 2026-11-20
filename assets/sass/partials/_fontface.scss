@@ -1,6 +1,7 @@
 @font-face {
     font-family: "Manrope";
-    src: url("../fonts/Manrope-VariableFont_wght.ttf") format("truetype");
+    src: url("../fonts/Manrope-VariableFont_wght.woff2") format("woff2"),
+         url("../fonts/Manrope-VariableFont_wght.ttf") format("truetype");
     font-weight: 200 800;
     font-style: normal;
     font-display: swap;
@@ -32,7 +33,8 @@
 
 @font-face {
     font-family: "Acrylic Hand Thick";
-    src: url("../fonts/AcylicalHand-Thick.ttf") format("truetype");
+    src: url("../fonts/AcylicalHand-Thick.woff2") format("woff2"),
+         url("../fonts/AcylicalHand-Thick.ttf") format("truetype");
     font-weight: 400;
     font-style: normal;
     font-display: swap;
